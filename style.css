@@ -14,13 +14,13 @@ ul{
     padding-bottom: 100px;
 }
 #a{
-    background: skyblue;
-}
-#b{
     background: red;
 }
+#b{
+    background: orange;
+}
 #c{
-    background: lightseagreen;
+    background: yellow;
 }
 
 .slider-container{
@@ -38,6 +38,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(0);
 }
 .control {
     position: absolute;
@@ -45,18 +46,14 @@ ul{
     left: 0;
     width: 100%;
     height: 100%;
-}
-.pages {
     display: flex;
-    height: 100%;
-    width: 100%;
 }
-.pages > .page-left {
+.control > .left {
     margin-left: 5%;
     margin-top: 22%;
     cursor: pointer;
 }
-.pages > .page-right {
+.control > .right {
     margin-left: 85%;
     margin-top: 22%;
     cursor: pointer;
